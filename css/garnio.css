@@ -14,3 +14,9 @@ h2 {
 #contact-button {
     margin-top: 30px;
 }
+
+@media (min-width: 850px) {
+            main {
+                max-width: 800px;
+            }
+        }

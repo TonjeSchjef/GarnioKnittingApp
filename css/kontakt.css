@@ -1,6 +1,7 @@
 @import url("/css/reset.css");
 @import url("/css/variables.css");
 
+
  .form-group {
             margin-bottom: 20px;
         }
@@ -40,3 +41,9 @@
             font-family: var(--font-body);
         }
 
+
+        @media (min-width: 850px) {
+            main {
+                max-width: 800px;
+            }
+        }
