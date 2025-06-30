@@ -1,0 +1,257 @@
+@import url('./css/variables.css');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 30px;
+    padding-top: 80px; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+} 
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    padding-right: 30px;
+    text-align: right;
+    z-index: 1000;
+    box-sizing: border-box;
+    display: flex; 
+    justify-content: space-between; 
+    box-shadow: 0 3px 8px #754c49;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: var(--space-small);
+    font-family: var(--font-logo);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.logo-container p {
+    margin: 0;
+    padding-left: var(--space-small);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.logo {
+   width: 40px;
+   height: auto;
+}
+
+nav {
+    position: absolute;
+    background-color: var(--primary-color);
+    text-align: right;
+    right: 0;
+    top: 60px;
+    width: 100%;
+    padding: 30px 0;
+    box-shadow: 0 4px 8px -4px #754c49;
+    border-top: 1px solid #754c49;
+    
+    
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.button {
+    font-family: var(--font-headings);
+    background-color: var(--secondary-color);
+    padding: 20px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    font-weight: 300;
+}
+
+.slogan {
+    font-family: var(--font-slogan);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color); 
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    z-index: 1000;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Arrow icon */
+.back-to-top::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid white;
+    margin-bottom: 2px;
+}
+
+/* Alternative with Unicode arrow */
+.back-to-top.unicode {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.back-to-top.unicode::before {
+    content: '↑';
+    border: none;
+    margin: 0;
+}
+
+.intro-section {
+    margin-top: 40px;
+}
+
+/*Desktop*/
+@media (min-width: 850px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    header {
+        padding: 5px 70px;
+    }
+
+    main {
+        padding: 80px;
+        padding-top: 100px; 
+    }
+    
+    nav {
+        display: block;
+        position: static;
+        padding-bottom: 0px;
+        padding-right: var(--space-small);
+        border-top: none;
+        box-shadow: none;
+        padding: 0;
+
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+     .hamburger-icon {
+        display: none;
+    }
+
+    .intro-section {
+    margin-top: 20px;
+}
+
+    .button {
+        min-width: 350px;
+    }
+
+
+    footer {
+        padding: 30px;
+        font-size: 18px;
+    }
+
+}
+

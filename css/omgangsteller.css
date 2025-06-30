@@ -1,0 +1,79 @@
+@import url("/css/reset.css");
+@import url("/css/variables.css");
+
+.counter-container {
+     background: white;
+    border-radius: 15px;
+    padding: 20px 30px 40px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.counter-display {
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 20px 0;
+    font-family: var(--font-headings);
+}
+
+.button-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.counter-btn {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+}
+
+.minus-btn {
+    background-color: var(--primary-color);
+}
+
+.plus-btn {
+    background-color: var(--secondary-color);
+}
+
+.counter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.counter-btn:active {
+    transform: translateY(0);
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #481A18;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+    background-color: #5a2725;
+    transform: translateY(-1px);
+}
+
+@media (min-width: 850px) {
+    .counter-container {
+        max-width: 500px;
+    }
+
+}

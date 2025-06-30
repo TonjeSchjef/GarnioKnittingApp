@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #A67C7A; 
+    --secondary-color: #8B5F5D; 
+    --background-color: #F2EDE8; 
+    --text-color: #333333; 
+    --footer-color: #2C2C2C;
+    --color-perfect: #4C5C4E;
+    --color-perfect-background: #E5EFE6;
+    --color-good: #6A8CA4;
+    --color-good-background: #E7EDFD opacity(0.6);
+    --color-neutral-answer: #F2EDE8;
+    --color-hover: #9B6F6D;
+   
+    --font-headings: "DM sans", arial, helvetica, sans-serif;
+    --font-body:  "inter", verdana, tahoma, sans-serif;
+    --font-logo: "poppins", arial, helvetica, sans-serif;
+    --font-slogan: "homemade apple", verdana, tahoma, sans-serif;
+    --fontsize-body-desktop: ;
+    --fontsize-body-mobile: ;
+    --fontsize-buttons-desktop: ;
+    --fontsize-buttons-mobile: ;
+    --fontsize-slogan-desktop: ;
+    --fontsize-slogan-mobile: ;
+    --fontsize-footer-desktop: ;
+    --fontsize-footer-mobile: ;
+
+    --space-small: 10px;
+    --space-medium: 20px;
+    --space-large: 40px;
+    --space-xlarge: 60px;
+}
+
+

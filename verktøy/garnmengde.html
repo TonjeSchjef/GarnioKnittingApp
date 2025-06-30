@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Garnio">
+    <script src="https://kit.fontawesome.com/bbeb57b99e.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Homemade+Apple&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="" >
+    <link rel="icon" type="image/png" sizes="16x16" href="" >
+    <link href="/css/garnmengde.css" rel="stylesheet">
+    <title>Beregn garnmengde</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/assets/logo.png" alt="logo Garnio" class="logo">
+            <p>GARNIO</p>
+        </div>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars-staggered"></i></label>
+        <nav>
+            <a href="./index.html">Verktøyoversikt</a>
+            <a href="garnio.html">Om Garnio</a>
+            <a href="kontakt.html">Kontakt oss</a>
+        </nav>
+    </header>
+
+    <main>
+       <section class="intro-section">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Tilbake til oversikt</a>
+        <h1>Beregn garnmengde</h1>
+        <p>Når du bytter garn i en oppskrift, kan du trenge mer eller mindre garn avhengig av løpelengden. Denne kalkulatoren hjelper deg å finne ut hvor mye du trenger.</p>
+       </section>
+
+       <div class="form-section">
+            <h2 class="section-title">Originalt garn i oppskriften:</h2>
+            
+            <div class="input-row">
+                <label for="originalGramPerBall">Gram per nøste:</label>
+                <div class="input-with-unit">
+                    <input type="number" id="originalGramPerBall" value="50" min="1">
+                    <span class="unit-label">g</span>
+                </div>
+            </div>
+            
+            <div class="input-row">
+                <label for="originalLengthPerBall">Løpelengde per nøste:</label>
+                <div class="input-with-unit">
+                    <input type="number" id="originalLengthPerBall" value="105" min="1">
+                    <span class="unit-label">m</span>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <label for="originalBallsNeeded">Antall nøster i oppskriften:</label>
+                <div class="input-with-unit">
+                    <input type="number" id="originalBallsNeeded" value="6" min="1">
+                    <span class="unit-label">stk</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2 class="section-title">Nytt garn du vil bruke:</h2>
+            
+            <div class="input-row">
+                <label for="newGramPerBall">Gram per nøste:</label>
+                <div class="input-with-unit">
+                    <input type="number" id="newGramPerBall" value="50" min="1">
+                    <span class="unit-label">g</span>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <label for="newLengthPerBall">Løpelengde per nøste:</label>
+                <div class="input-with-unit">
+                    <input type="number" id="newLengthPerBall" value="125" min="1">
+                    <span class="unit-label">m</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="calculate-btn" id="calculateBtn">Beregn garnmengde</button>
+
+        <div class="result-container" id="resultContainer">
+            <h3 class="result-title">Du trenger</h3>
+            <div class="result-display">
+                <div class="result-number" id="resultNumber">5</div>
+                <div class="result-unit" id="resultUnit">nøster</div>
+            </div>
+        </div>
+
+
+
+        <button class="back-to-top" id="backToTop" aria-label="Back to top"></button>
+    </main>
+    
+
+    <footer>
+        <p class="slogan">Fra garn til glede</p>
+        <p>© 2025 Garnio. Laget med <i class="fas fa-heart" style="color: red;"></i> for strikkere</p>
+    </footer>
+    <script src="../js/garnmengde.js"></script>
+    <script src="../js/scroll.js"></script>  
+</body>
+</html>
