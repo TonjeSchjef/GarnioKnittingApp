@@ -257,8 +257,13 @@
 @media (min-width: 850px) {
     
     .search-section {
-        max-width: 450px;
+        max-width: 650px;
     }   
+
+    
+    .search-input {
+         width: 95%; /* Full width on desktop */
+    }
     
     .tips-container, .results-container {
         max-width: 600px;

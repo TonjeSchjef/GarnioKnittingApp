@@ -33,7 +33,8 @@ nav,
 }
 
 #menu-checkbox:checked ~ nav {
-    display: block;
+    height: 180px !important;
+    opacity: 1 !important;
 } 
 
 header {
@@ -77,14 +78,19 @@ header {
 
 nav {
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     text-align: right;
     right: 0;
     top: 60px;
     width: 100%;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     box-shadow: 0 4px 8px -4px #754c49;
     border-top: 1px solid #754c49;
+    display: block !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
     
     
 }
@@ -97,19 +103,105 @@ nav a {
     font-size: 1.2rem;
 }
 
+.hamburger-icon {
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.hamburger-icon:hover {
+    transform: scale(1.05);
+}
+
+/* FontAwesome hamburger ikon */
+.fa-bars-staggered {
+    transition: all 0.3s ease;
+    display: inline-block;
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+/* Skjul hamburger når menyen er åpen */
+#menu-checkbox:checked ~ label .fa-bars-staggered {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.8);
+}
+
+/* X-symbol når menyen er åpen */
+.hamburger-icon::after {
+    content: "✕";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg) scale(0.8);
+    font-size: 28px;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    line-height: 1;
+}
+
+#menu-checkbox:checked ~ label.hamburger-icon::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
 .back-link {
     text-decoration: none;
     color: var(--text-color);
     font-size: 14px;
 }
-.button {
+
+.back-link:hover {
+    color: var(--secondary-color);
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+.tool-button {
     font-family: var(--font-headings);
     background-color: var(--secondary-color);
     padding: 20px 20px;
     border-radius: 8px;
     font-size: 18px;
     border: none;
-    width: 220px; /* Fast bredde som du hadde */
+    width: 300px; /* Fast bredde som du hadde */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none; /* Fjern understreking */
+    display: inline-block; /* For å få box-model som knapp */
+    text-align: center; /* Sentrer teksten */
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.tool-button:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tool-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.button {
+    font-family: var(--font-headings);
+    background-color: var(--secondary-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    width: 100%; /* Fast bredde som du hadde */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     color: white;
     text-decoration: none; /* Fjern understreking */
@@ -131,7 +223,6 @@ nav a {
     text-decoration: none;
     font-weight: 500;
 }
-
 
 
 footer {
@@ -228,13 +319,20 @@ footer {
     }
     
     nav {
-        display: block;
+        display: block !important;
+        height: auto !important;
+        max-height: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+        overflow: visible !important;
+        padding: 0 !important;
+        background-color: var(--primary-color);
         position: static;
         padding-bottom: 0px;
         padding-right: var(--space-small);
         border-top: none;
         box-shadow: none;
-        padding: 0;
 
     }
 
@@ -245,6 +343,7 @@ footer {
     nav a:hover {
         background-color: var(--color-hover);
         border-radius: 8pc;
+        transition: background-color 0.3s ease;
     }
 
      .hamburger-icon {

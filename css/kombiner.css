@@ -1,8 +1,6 @@
 @import url("/css/reset.css");
 @import url("/css/variables.css");
 
-
-
 /* Intro section */
 .intro-section {
     margin-bottom: 30px;
@@ -167,27 +165,34 @@ h1 {
     margin-top: 2px;
 }
 
-
-/* Search button - standalone with shadow */
-.search-btn {
+.search-button {
+    font-family: var(--font-headings);
     background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    padding: 14px 30px;
+    padding: 15px 20px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 18px;
+    border: none;
+    width: 100%; /* Fast bredde som du hadde */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none; /* Fjern understreking */
+    display: inline-block; /* For å få box-model som knapp */
+    text-align: center; /* Sentrer teksten */
     font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100%;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: background-color 0.3s ease;
     box-sizing: border-box;
-    margin-bottom: 25px;
 }
 
-.search-btn:hover {
-    background-color: var(--primary-color);
-    transform: translateY(-1px);
+.search-button:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 /* Results container */
