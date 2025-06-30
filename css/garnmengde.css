@@ -68,7 +68,7 @@
         }
 
         .calculate-btn:hover {
-            background-color: #5d3a37;
+            background-color: var(--primary-color);
             transform: translateY(-1px);
         }
 

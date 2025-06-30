@@ -102,7 +102,6 @@ nav a {
     color: var(--text-color);
     font-size: 14px;
 }
-
 .button {
     font-family: var(--font-headings);
     background-color: var(--secondary-color);
@@ -110,9 +109,21 @@ nav a {
     border-radius: 8px;
     font-size: 18px;
     border: none;
-    width: 100%;
+    width: 220px; /* Fast bredde som du hadde */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     color: white;
+    text-decoration: none; /* Fjern understreking */
+    display: inline-block; /* For å få box-model som knapp */
+    text-align: center; /* Sentrer teksten */
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .button a {
@@ -121,11 +132,7 @@ nav a {
     font-weight: 500;
 }
 
-.button:hover {
-    background-color: var(--color-hover);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+
 
 footer {
     background-color: var(--footer-color);
@@ -233,6 +240,11 @@ footer {
 
     nav a {
         display: inline-block;
+    }
+
+    nav a:hover {
+        background-color: var(--color-hover);
+        border-radius: 8pc;
     }
 
      .hamburger-icon {
