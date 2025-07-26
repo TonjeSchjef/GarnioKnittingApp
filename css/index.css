@@ -8,16 +8,16 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 15px;
-    max-width: none; /* Remove max-width constraint */
-    margin-left: 0;   /* Remove auto centering */
-    margin-right: 0;  /* Remove auto centering */
-    padding: 0;       /* Remove padding */
+    max-width: none; 
+    margin-left: 0;  
+    margin-right: 0; 
+    padding: 0;   
 }
 
 .button-container .button {
     flex: 0 0 auto;
-    width: 220px;  /* Fixed width for all buttons */
-    white-space: nowrap; /* Prevent text wrapping in buttons */
+    width: 220px; 
+    white-space: nowrap; 
 }
 
 .index-image {
@@ -28,10 +28,10 @@
     margin-bottom: -10px;
 }
 
-/* Mobile first - 1 button per row */
+
 @media (max-width: 599px) {
     .button-container {
-        justify-content: center; /* Center single button on mobile */
+        justify-content: center; 
     }
     
     .button-container .button {
@@ -40,7 +40,7 @@
     }
 }
 
-/* Small screens - 2 buttons per row */
+
 @media (min-width: 600px) and (max-width: 849px) {
     .button-container .button {
         flex: 0 0 calc(50% - 7.5px);
@@ -48,14 +48,13 @@
     }
 }
 
-/* Medium and large screens - force specific wrapping */
 @media (min-width: 850px) {
     .button-container {
-        width: fit-content; /* Container only as wide as needed */
+        width: fit-content; 
     }
     
     .button-container .button {
-        flex: 0 0 220px;  /* Fixed width for all buttons */
+        flex: 0 0 220px; 
         width: 220px;
     }
 }
@@ -75,6 +74,6 @@
     
     .button-container .button {
         flex: 0 0 220px;
-        width: 220px;  /* Fixed width for all buttons */
+        width: 220px; 
     }
 }

@@ -16,7 +16,7 @@ h2 {
 }
 
 @media (min-width: 850px) {
-            main {
-                max-width: 800px;
-            }
-        }
+    main {
+        max-width: 800px;
+    }
+}

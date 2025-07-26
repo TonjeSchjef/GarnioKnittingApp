@@ -10,8 +10,6 @@ const yarnResults = document.getElementById('yarnResults');
 let selectedIndex = -1;
 let currentResults = [];
 
-// ===== AUTOCOMPLETE FUNCTIONS =====
-
 // Search function using the yarn database
 function searchYarns(query) {
     if (!query || query.length < 2) return [];
@@ -62,7 +60,6 @@ function hideAutocomplete() {
 function selectItem(key) {
     const yarn = yarnUtils.findYarn(key);
     if (yarn) {
-        // Bruk bare key-navnet, ikke full "Brand Name" format
         searchInput.value = key;
         hideAutocomplete();
         searchBtn.focus();
@@ -109,9 +106,7 @@ function updateSelection(items) {
     });
 }
 
-// ===== SEARCH ALTERNATIVES FUNCTIONS =====
-
-// Finn alternativer basert på søketerm - FORBEDRET SØKELOGIKK
+// Finn alternativer basert på søketerm 
 function findYarnAlternatives(searchTerm) {
     console.log('Søker etter alternativer for:', searchTerm);
     
@@ -232,7 +227,7 @@ function findYarnAlternatives(searchTerm) {
     ];
 }
 
-// NY FUNKSJON: Bestem match-kvalitet - NØYAKTIG VERSJON
+// Bestem match-kvalitet 
 function determineMatchQuality(originalYarn, alternativeYarn) {
     // Parse strikkefastheter for sammenligning
     const originalGauge = yarnUtils.parseGauge(originalYarn.gauge);
@@ -388,8 +383,6 @@ function displayResults(alternatives, searchTerm) {
 
     console.log(`Fant ${alternatives.length} alternativer for "${searchTerm}"`);
 }
-
-// ===== EVENT LISTENERS =====
 
 // Autocomplete event listeners
 searchInput.addEventListener('input', (e) => {

@@ -42,7 +42,7 @@
             // Oppdater tall
             resultNumber.textContent = balls;
             
-            // Sett riktig enhet (singular/plural)
+            // Sett riktig enhet
             if (balls === 1) {
                 resultUnit.textContent = 'nøste';
             } else {

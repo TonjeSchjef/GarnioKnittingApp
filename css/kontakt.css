@@ -3,47 +3,47 @@
 
 
  .form-group {
-            margin-bottom: 20px;
-        }
+    margin-bottom: 20px;
+}
 
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: var(--text-color);
-            font-size: 16px;
-        }
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 16px;
+}
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 16px;
-            font-family: var(--font-body);
-            background-color: white;
-            box-sizing: border-box;
-            transition: border-color 0.3s ease;
-        }
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: var(--font-body);
+    background-color: white;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
 
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        textarea:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
 
-        textarea {
-            resize: vertical;
-            min-height: 120px;
-            font-family: var(--font-body);
-        }
+textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: var(--font-body);
+}
 
 
-        @media (min-width: 850px) {
-            main {
-                max-width: 800px;
-            }
-        }
+@media (min-width: 850px) {
+    main {
+        max-width: 800px;
+    }
+}

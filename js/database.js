@@ -3,11 +3,11 @@ const yarnDatabase = {
     "sandnes peer gynt": {
         brand: "Sandnes",
         name: "Peer Gynt",
-        weight: 50, // gram per nøste
-        length: 91, // meter per 50g
+        weight: 50, 
+        length: 91, 
         fiber: "100% norsk ull",
         category: "DK/Light Worsted",
-        gauge: "22 m", // masker per 10cm på pinne 3.5-4mm
+        gauge: "22 m", 
         needleSize: "3.5-4mm",
         alternatives: ["sandnes smart, sandnes merinoull, sandnes duo"],
     },
@@ -96,8 +96,8 @@ const yarnDatabase = {
         length: 400,
         fiber: "100% alpakka",
         category: "Lace/Fingering",
-        gauge: "",
-        needleSize: "",
+        gauge: "28-32 m",
+        needleSize: "3-5mm",
         alternatives: ["knitting for olive soft silk mohair", "sandnes tynn silk mohair", "drops kid silk"]
     },
 
@@ -119,13 +119,13 @@ const yarnDatabase = {
         weight: 50,
         length: 100,
         fiber: "60% alpakka, 40% ull",
-        category: "",
+        category: "DK/Light Worsted",
         gauge: "22-19 m",
         needleSize: "3.5-5mm",
         alternatives: ["rauma mitu", "viking bambino"]
     },
 
-         "sandnes fritidsgarn": {
+    "sandnes fritidsgarn": {
         brand: "Sandnes Garn",
         name: "Fritidsgarn",
         weight: 50,
@@ -137,7 +137,7 @@ const yarnDatabase = {
         alternatives: ["rauma vams"]
     },
 
-        "sandnes double sunday": {
+    "sandnes double sunday": {
         brand: "Sandnes Garn",
         name: "Double Sunday",
         weight: 50,
@@ -594,15 +594,15 @@ const yarnDatabase = {
     },
 
     "drops cotton light": {
-    brand: "Drops Garnstudio",
-    name: "Cotton Light",
-    weight: 50,
-    length: 105,
-    fiber: "100% bomull",
-    category: "dk",
-    gauge: "21 m",
-    needleSize: "4mm",
-    alternatives: ["sandnes mandarin petit", "bomullsgarn dk", "drops paris"]
+        brand: "Drops Garnstudio",
+        name: "Cotton Light",
+        weight: 50,
+        length: 105,
+        fiber: "100% bomull",
+        category: "dk",
+        gauge: "21 m",
+        needleSize: "4mm",
+        alternatives: ["sandnes mandarin petit", "bomullsgarn dk", "drops paris"]
     },
 
     "drops belle": {
@@ -1001,6 +1001,589 @@ const yarnDatabase = {
         gauge: "18 m", 
         needleSize: "4.5-5mm",
         alternatives: ["viking nordlys", "merinoull aran", "tovegarn"]
+    },
+
+    // HOUSE OF YARN   
+    "multi popkorn": {
+        brand: "House of Yarn",
+        name: "Multi Popkorn",
+        weight: 50,
+        length: 135,
+        fiber: "12% mohair, 24% ull, 24% akryl, 9% nylon, 31% polyester",
+        category: "effect yarn",
+        gauge: "18-22 m",
+        needleSize: "4-6mm",
+        alternatives: ["pafugl", "fnugg", "erle"]
+    },
+
+    "fnugg": {
+        brand: "House of Yarn",
+        name: "Fnugg",
+        weight: 50,
+        length: 80,
+        fiber: "100% børstet alpakka",
+        category: "chunky",
+        gauge: "10-12 m",
+        needleSize: "7-8mm",
+        alternatives: ["pafugl", "faerytale", "puno"]
+    },
+
+    "pafugl": {
+        brand: "House of Yarn",
+        name: "Påfugl",
+        weight: 50,
+        length: 90,
+        fiber: "73% mohair, 22% ull, 5% polyamid",
+        category: "luxury mohair",
+        gauge: "10-12 m",
+        needleSize: "7-9mm",
+        alternatives: ["fnugg", "erle", "kidsilk"]
+    },
+
+    "sterk": {
+        brand: "House of Yarn",
+        name: "Sterk",
+        weight: 50,
+        length: 137,
+        fiber: "40% alpakka, 40% merinoull, 20% nylon",
+        category: "sport",
+        gauge: "22 m",
+        needleSize: "3.5mm",
+        alternatives: ["sisu", "perfect", "tresko"]
+    },
+
+    "alpakka forte": {
+        brand: "House of Yarn",
+        name: "Alpakka Forte",
+        weight: 50,
+        length: 133,
+        fiber: "80% alpakka, 20% nylon",
+        category: "sport",
+        gauge: "25-27 m",
+        needleSize: "2.5-3.5mm",
+        alternatives: ["sterk", "alpakka wool", "merino babyull"]
+    },
+
+    "faerytale": {
+        brand: "House of Yarn",
+        name: "Faerytale",
+        weight: 50,
+        length: 175,
+        fiber: "100% alpakka",
+        category: "fingering/light lace",
+        gauge: "18 m",
+        needleSize: "4.5mm",
+        alternatives: ["pus", "kidsilk erle", "merino babyull"]
+    },
+
+    "pus": {
+        brand: "House of Yarn",
+        name: "Pus",
+        weight: 50,
+        length: 100,
+        fiber: "70% baby alpakka, 17% akryl, 13% polyamid",
+        category: "luxe alpakkablanding",
+        gauge: "12 m",
+        needleSize: "9mm",
+        alternatives: ["faerytale", "fnugg", "pehøne"]
+    },
+
+    "alpakka wool": {
+        brand: "House of Yarn",
+        name: "Alpakka Wool",
+        weight: 50,
+        length: 166,
+        fiber: "60% alpakka, 40% ull",
+        category: "fingering/light",
+        gauge: "27 m",
+        needleSize: "3 mm",
+        alternatives: ["baby ull", "merino babyull", "fin alpakka"]
+    },
+
+    "merino babyull": {
+        brand: "House of Yarn",
+        name: "Merino Babyull",
+        weight: 50,
+        length: 175,
+        fiber: "100% superwash merinoull",
+        category: "fingering",
+        gauge: "28 m",
+        needleSize: "3 mm",
+        alternatives: ["dale baby ull", "baby ull", "faerytale"]
+    },
+
+    "baby ull": {
+        brand: "House of Yarn",
+        name: "Dale Baby Ull",
+        weight: 50,
+        length: 165,
+        fiber: "100% superwash merinoull",
+        category: "fingering",
+        gauge: "32 m",
+        needleSize: "2.5‑3 mm",
+        alternatives: ["merino babyull", "alpakka wool", "faerytale"]
+    },
+
+    "alpakka tweed": {
+        brand: "House of Yarn",
+        name: "Alpakka Tweed",
+        weight: 50,
+        length: null,
+        fiber: "50% alpakka, 30% ull, 20% Donegal",
+        category: "aran/worsted",
+        gauge: null,
+        needleSize: null,
+        alternatives: ["alpakka wool", "sterk", "cortina soft"]
+    },
+
+    "kidsilk erle": {
+        brand: "House of Yarn",
+        name: "Kidsilk Erle",
+        weight: 50,
+        length: 350,
+        fiber: "56% mohair, 26% silke, 18% ull",
+        category: "lace",
+        gauge: "18-24 m",
+        needleSize: "3-5mm",
+        alternatives: ["faerytale", "pus", "kidsilk"]
+    },
+
+    "cortina soft": {
+        brand: "House of Yarn",
+        name: "Cortina Soft",
+        weight: 50,
+        length: 55,
+        fiber: "100% ull",
+        category: "super bulky",
+        gauge: "10 m",
+        needleSize: "9-10mm",
+        alternatives: ["vams", "fritidsgarn", "puno"]
+    },
+
+    "pure merino": {
+        brand: "House of Yarn",
+        name: "Pure Merino",
+        weight: 50,
+        length: 105,
+        fiber: "100% merinoull (superwash)",
+        category: "dk",
+        gauge: "21 m",
+        needleSize: "4mm",
+        alternatives: ["merino extra fine", "alpakka forte", "lerke"]
+    },
+
+    "puno": {
+        brand: "House of Yarn",
+        name: "Puno",
+        weight: 50,
+        length: 110,
+        fiber: "68% baby alpakka, 10% merinoull, 22% polyamid",
+        category: "bulky",
+        gauge: "13-16 m",
+        needleSize: "6-7mm",
+        alternatives: ["pus", "fnugg", "påfugl"]
+    },
+
+    //UNTOLD
+    "un‐told light merino": {
+        brand: "Un‑told",
+        name: "Light Merino",
+        weight: 50,
+        length: 125,
+        fiber: "100% ren ubehandlet merinoull",
+        category: "fingering/dk",
+        gauge: "21 m",
+        needleSize: "4 mm",
+        alternatives: ["supreme wool", "cotton merino"]
+    },
+
+    "un‐told cotton merino": {
+        brand: "Un‑told",
+        name: "Cotton Merino",
+        weight: 50,
+        length: 125,
+        fiber: "blanding av bomull og merinoull",
+        category: "dk",
+        gauge: "21 m",
+        needleSize: "4 mm",
+        alternatives: ["light merino", "supreme wool"]
+    },
+
+    "un‐told supreme wool": {
+        brand: "Un‑told",
+        name: "Supreme Wool",
+        weight: 50,
+        length: null,
+        fiber: "100% merinoull (superwash?)",
+        category: "sport/dk",
+        gauge: null,
+        needleSize: null,
+        alternatives: ["light merino", "cotton merino"]
+    },
+
+    "un‐told fuzzy mohair": {
+        brand: "Un‑told",
+        name: "Fuzzy Mohair",
+        weight: 50,
+        length: 90,
+        fiber: "75% mohair, 25% ull",
+        category: "mohair",
+        gauge: "14 m",
+        needleSize: "6 mm",
+        alternatives: ["chunky mohair"]
+    },
+
+    "un‐told chunky mohair": {
+        brand: "Un‑told",
+        name: "Chunky Mohair",
+        weight: 50,
+        length: 200,
+        fiber: "78% mohair, 13% ull, 9% nylon",
+        category: "bulky mohair",
+        gauge: "12 m",
+        needleSize: "4‑9mm",
+        alternatives: ["fuzzy mohair"]
+    },
+
+    //FILCOLANA
+    "filcolana arwetta classic": {
+        brand: "Filcolana",
+        name: "Arwetta Classic",
+        weight: 50,
+        length: 210,
+        fiber: "80% superwash merinoull, 20% nylon",
+        category: "light fingering / sokkegarn",
+        gauge: "28‑32 m",
+        needleSize: "2.5‑3mm",
+        alternatives: ["arwetta duo", "rautegarn", "ullsock merino"]
+    },
+
+        "filcolana tilia": {
+        brand: "Filcolana",
+        name: "Tilia",
+        weight: 25,
+        length: 210,
+        fiber: "70% kid mohair, 30% mulberry silke",
+        category: "lace",
+        gauge: "20‑21 m (dobbel tråd på 4mm)",
+        needleSize: "3.5‑6mm",
+        alternatives: ["tykt mohair", "kidsilk erle", "puno held dubbel"]
+    },
+
+    //ISAGER
+    "isager alpaca 1": {
+        brand: "Isager",
+        name: "Alpaca 1",
+        weight: 50,
+        length: 400,
+        fiber: "100% alpaca",
+        category: "lace/light fingering",
+        gauge: "28 m",
+        needleSize: "3 mm",
+        alternatives: ["alpaca 2", "silk mohair", "light merino"]
+    },
+
+    "isager alpaca 2": {
+        brand: "Isager",
+        name: "Alpaca 2",
+        weight: 50,
+        length: 250,
+        fiber: "50% alpaca, 50% merinoull",
+        category: "fingering",
+        gauge: "26 m",
+        needleSize: "3 mm",
+        alternatives: ["alpaca 1", "silk mohair", "pure merino"]
+    },
+
+    "isager tweed": {
+        brand: "Isager",
+        name: "Tweed",
+        weight: 50,
+        length: 200,
+        fiber: "70% wool, 30% mohair",
+        category: "sport/fingering",
+        gauge: "26 m",
+        needleSize: "3 mm",
+        alternatives: ["alpaca 2", "spinni", "merilin"]
+    },
+
+    "isager silk mohair": {
+        brand: "Isager",
+        name: "Silk Mohair",
+        weight: 25,
+        length: 212,
+        fiber: "75% super kid mohair, 25% silk",
+        category: "lace",
+        gauge: "18 m (16 sts med Spinni på 4 mm)",
+        needleSize: "3.5-4mm",
+        alternatives: ["tilia", "kidsilk erle", "alpaca 2 + mohair"]
+    },
+
+    //HILLESVÅG
+    "varde pelsullgarn": {
+        brand: "Hillesvåg",
+        name: "Varde Pelsullgarn",
+        weight: 100,
+        length: 200,
+        fiber: "100% norsk pelssau-ull",
+        category: "aran/worsted",
+        gauge: "18 m",
+        needleSize: "4.5-5mm",
+        alternatives: ["tinde pelsullgarn", "vidde lamullgarn", "rauma vams"]
+    },
+
+    "tinde pelsullgarn": {
+        brand: "Hillesvåg",
+        name: "Tinde Pelsullgarn",
+        weight: 100,
+        length: 260,
+        fiber: "100% norsk pelssau-ull",
+        category: "dk",
+        gauge: "22 m",
+        needleSize: "3.5-4mm",
+        alternatives: ["varde pelsullgarn", "vidde lamullgarn", "peer gynt"]
+    },
+
+    "vidde lamullgarn": {
+        brand: "Hillesvåg",
+        name: "Vidde Lamullgarn",
+        weight: 100,
+        length: 200,
+        fiber: "100% norsk lamull",
+        category: "aran/worsted",
+        gauge: "18 m",
+        needleSize: "4.5-5mm",
+        alternatives: ["varde pelsullgarn", "rauma vams", "peer gynt"]
+    },
+
+    //LANA GATTO
+    "lana_gatto super soft": {
+        brand: "Lana Gatto",
+        name: "Super Soft",
+        weight: 50,
+        length: 125,
+        fiber: "100% ekstrafin merinoull",
+        category: "DK / light worsted",
+        gauge: "31 m",
+        needleSize: "4‑5mm",
+        alternatives: ["merino delight", "pure merino", "maxi soft"]
+    },
+
+    "lana_gatto maxi soft": {
+        brand: "Lana Gatto",
+        name: "Maxi Soft",
+        weight: 50,
+        length: 90,
+        fiber: "100% merinoull",
+        category: "aran / chunky",
+        gauge: "17 m",
+        needleSize: "6mm",
+        alternatives: ["super soft", "cortina soft", "brushed alpaca"]
+    },
+
+    "lana_gatto calico": {
+        brand: "Lana Gatto",
+        name: "Calicò",
+        weight: 50,
+        length: 113,
+        fiber: "50% merinoull, 50% akryl",
+        category: "dk",
+        gauge: "17 m",
+        needleSize: "4‑4.5mm",
+        alternatives: ["super soft", "cotton merino"]
+    },
+
+        "lana_gatto prestige": {
+        brand: "Lana Gatto",
+        name: "Prestige",
+        weight: 25,
+        length: 75,
+        fiber: "100% kasjmir",
+        category: "sport",
+        gauge: "24 m",
+        needleSize: "4mm",
+        alternatives: ["class", "feeling", "pure merino"]
+    },
+
+    //PERMIN    
+    "angel": {
+        brand: "Permin",
+        name: "Angel",
+        weight: 25,
+        length: 210,
+        fiber: "70% kid mohair, 30% silke",
+        category: "lace",
+        gauge: "20 m",
+        needleSize: "4.5 mm",
+        alternatives: ["nanna + angel", "tilia + angel", "bella mohair"]
+    },
+
+    "bella color": {
+        brand: "Permin",
+        name: "Bella Color",
+        weight: 50,
+        length: 140,
+        fiber: "75% kid mohair, 20% ull, 5% polyamid",
+        category: "bulky mohair",
+        gauge: "14 m",
+        needleSize: "6 mm",
+        alternatives: ["angel held dobbel", "tykk mohair", "loop mohair"]
+    },
+
+    "nana": {
+        brand: "Permin",
+        name: "Nanna",
+        weight: 50,
+        length: 175,
+        fiber: "47% alpaka, 45% bomull, 8% ull",
+        category: "dk",
+        gauge: "17-18 m",
+        needleSize: "4.5-5 mm",
+        alternatives: ["nellie", "cotton alpaca", "summer wool"]
+    },
+
+    "nellie": {
+        brand: "Permin",
+        name: "Nellie",
+        weight: 50,
+        length: 200,
+        fiber: "55% alpaka, 24% bomull, 21% ull",
+        category: "dk",
+        gauge: "18-20 m",
+        needleSize: "3.5-4 mm",
+        alternatives: ["nanna", "esther", "alpaca cotton blend"]
+    },
+
+    "esther": {
+        brand: "Permin",
+        name: "Esther",
+        weight: 50,
+        length: 230,
+        fiber: "55% ull, 25% bomull",
+        category: "sport / fingering",
+        gauge: "26 m",
+        needleSize: "3 mm",
+        alternatives: ["selma", "nellie", "maja"]
+    },
+
+    "selma": {
+        brand: "Permin",
+        name: "Selma",
+        weight: 50,
+        length: 210,
+        fiber: "75% superwash merinoull, 25% polyamid",
+        category: "sokkegarn",
+        gauge: "30 m",
+        needleSize: "2-3 mm",
+        alternatives: ["esther", "arwetta", "sisu"]
+    },
+
+    "iris": {
+        brand: "Permin",
+        name: "Iris",
+        weight: 50,
+        length: 125,
+        fiber: "45% viskose, 35% bomull, 20% lin",
+        category: "summer/flame",
+        gauge: "18-20 m",
+        needleSize: "3.5-4 mm",
+        alternatives: ["cotton linen", "hanskat", "lina flame"]
+    },
+
+    "alice": {
+        brand: "Permin",
+        name: "Alice",
+        weight: 50,
+        length: 150,
+        fiber: "63% alpakka, 37% polyamid",
+        category: "bulky",
+        gauge: "15‑16 m",
+        needleSize: "8 mm",
+        alternatives: ["angel + alice", "maxi soft", "chunky alpaca"]
+    },
+
+    "kamma": {
+        brand: "Permin",
+        name: "Kamma",
+        weight: 50,
+        length: 175,
+        fiber: "67% ull, 20% alpakka, 5% silke, 6% akryl, 2% viskose",
+        category: "dk / tweed",
+        gauge: "22 m",
+        needleSize: "3.5 mm",
+        alternatives: ["nanna", "nellie", "kamelia"]
+    },
+
+    "kamelia": {
+        brand: "Permin",
+        name: "Kamelia",
+        weight: 50,
+        length: 90,
+        fiber: "65% ull, 20% alpakka, 5% silke, 6% akryl, 2% viskose",
+        category: "aran/chunky",
+        gauge: "14 m",
+        needleSize: "6 mm",
+        alternatives: ["kamma", "bella color", "tykk mohair"]
+    },
+
+    "dagmar": {
+        brand: "Permin",
+        name: "Dagmar",
+        weight: 50,
+        length: 150,
+        fiber: "75% økologisk merinoull, 25% polyamid",
+        category: "tweed",
+        gauge: "18 m",
+        needleSize: "4.5mm",
+        alternatives: ["rigmor", "esther", "bella"]
+    },
+
+    "leonora": {
+        brand: "Permin",
+        name: "Leonora",
+        weight: 25,
+        length: 180,
+        fiber: "50% silke, 40% ull, 10% kid mohair",
+        category: "light fingering",
+        gauge: "28 m",
+        needleSize: "3mm",
+        alternatives: ["angel", "bella", "wild & soft"]
+    },
+
+    "bella": {
+        brand: "Permin",
+        name: "Bella",
+        weight: 50,
+        length: 145,
+        fiber: "75% kid mohair, 20% ull, 5% polyamid",
+        category: "bulky mohair",
+        gauge: "14 m",
+        needleSize: "6mm",
+        alternatives: ["bella color", "angel held dobbel", "chunky mohair"]
+    },
+
+    "rigmor": {
+        brand: "Permin",
+        name: "Rigmor",
+        weight: 50,
+        length: 150,
+        fiber: "100% superwash merinoull",
+        category: "sport / self-striping",
+        gauge: "22 m",
+        needleSize: "3.5-4mm",
+        alternatives: ["dagmar", "selma", "esther"]
+    },
+
+    "selma": {
+        brand: "Permin",
+        name: "Selma",
+        weight: 50,
+        length: 210,
+        fiber: "75% superwash merinoull, 25% polyamid",
+        category: "sokkegarn",
+        gauge: "28 m",
+        needleSize: "3mm",
+        alternatives: ["arwetta", "sisu", "rigmor"]
     }
 };
 

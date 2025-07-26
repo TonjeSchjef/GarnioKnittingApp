@@ -1,5 +1,4 @@
 // Strikkeordbok funktionalitet
-
 // DOM elementer
 const searchInput = document.getElementById('termSearch');
 const searchBtn = document.getElementById('searchBtn');

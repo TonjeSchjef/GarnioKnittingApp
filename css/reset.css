@@ -171,12 +171,12 @@ nav a {
     border-radius: 8px;
     font-size: 18px;
     border: none;
-    width: 300px; /* Fast bredde som du hadde */
+    width: 300px; 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     color: white;
-    text-decoration: none; /* Fjern understreking */
-    display: inline-block; /* For å få box-model som knapp */
-    text-align: center; /* Sentrer teksten */
+    text-decoration: none;
+    display: inline-block; 
+    text-align: center; 
     font-weight: 500;
     transition: background-color 0.3s ease;
     box-sizing: border-box;
@@ -201,12 +201,12 @@ nav a {
     border-radius: 8px;
     font-size: 18px;
     border: none;
-    width: 100%; /* Fast bredde som du hadde */
+    width: 100%; 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     color: white;
-    text-decoration: none; /* Fjern understreking */
-    display: inline-block; /* For å få box-model som knapp */
-    text-align: center; /* Sentrer teksten */
+    text-decoration: none; 
+    display: inline-block;
+    text-align: center;
     font-weight: 500;
     transition: background-color 0.3s ease;
     box-sizing: border-box;
@@ -271,7 +271,6 @@ footer {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Arrow icon */
 .back-to-top::before {
     content: '';
     width: 0;
@@ -282,7 +281,6 @@ footer {
     margin-bottom: 2px;
 }
 
-/* Alternative with Unicode arrow */
 .back-to-top.unicode {
     font-size: 20px;
     color: white;

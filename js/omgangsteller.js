@@ -236,6 +236,3 @@ function createWakeLockToggle() {
     
     document.body.appendChild(toggleBtn);
 }
-
-// Uncomment denne linjen hvis du vil ha en toggle-knapp:
-// createWakeLockToggle();

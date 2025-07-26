@@ -1,7 +1,6 @@
 @import url("/css/reset.css");
 @import url("/css/variables.css");
 
-/* Intro section */
 .intro-section {
     margin-bottom: 30px;
     text-align: left;
@@ -24,12 +23,10 @@ h1 {
     text-align: left;
 }
 
-/* Calculator container - NO background, NO padding, NO shadow */
 .calculator-container {
     margin-bottom: 25px;
 }
 
-/* Yarn sections */
 .yarn-section {
     background: white;
     padding: 20px;
@@ -122,7 +119,6 @@ h1 {
     font-size: 14px;
 }
 
-/* Dropdown for autocomplete */
 .dropdown {
     position: absolute;
     top: 100%;
@@ -172,12 +168,12 @@ h1 {
     border-radius: 8px;
     font-size: 18px;
     border: none;
-    width: 100%; /* Fast bredde som du hadde */
+    width: 100%; 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     color: white;
-    text-decoration: none; /* Fjern understreking */
-    display: inline-block; /* For å få box-model som knapp */
-    text-align: center; /* Sentrer teksten */
+    text-decoration: none; 
+    display: inline-block;
+    text-align: center;
     font-weight: 500;
     transition: background-color 0.3s ease;
     box-sizing: border-box;
@@ -195,7 +191,6 @@ h1 {
     font-weight: 500;
 }
 
-/* Results container */
 .results-container {
     background: white;
     padding: 25px;
@@ -234,7 +229,6 @@ h1 {
     font-size: 14px;
 }
 
-/* Info container */
 .info-container {
     background: white;
     padding: 20px;
