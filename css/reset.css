@@ -78,7 +78,7 @@ header {
 
 nav {
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: #E8E1DB;
     text-align: right;
     right: 0;
     top: 60px;
