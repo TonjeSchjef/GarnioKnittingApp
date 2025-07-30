@@ -336,6 +336,7 @@ footer {
 
     nav a {
         display: inline-block;
+        font-size: 1rem;
     }
 
     nav a:hover {
@@ -348,14 +349,17 @@ footer {
         display: none;
     }
 
+    .logo-link {
+        margin-top: 5px;
+    }
+
     .intro-section {
     margin-top: 20px;
-}
+    }
 
     .button {
         min-width: 350px;
     }
-
 
     footer {
         padding: 30px;

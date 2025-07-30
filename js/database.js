@@ -1252,7 +1252,7 @@ const yarnDatabase = {
         weight: 50,
         length: 210,
         fiber: "80% superwash merinoull, 20% nylon",
-        category: "light fingering / sokkegarn",
+        category: "light fingering",
         gauge: "28‑32 m",
         needleSize: "2.5‑3mm",
         alternatives: ["arwetta duo", "rautegarn", "ullsock merino"]
@@ -1264,8 +1264,8 @@ const yarnDatabase = {
         weight: 25,
         length: 210,
         fiber: "70% kid mohair, 30% mulberry silke",
-        category: "lace",
-        gauge: "20‑21 m (dobbel tråd på 4mm)",
+       category: "Lace/Fingering",
+        gauge: "28-32 m",
         needleSize: "3.5‑6mm",
         alternatives: ["tykt mohair", "kidsilk erle", "puno held dubbel"]
     },
