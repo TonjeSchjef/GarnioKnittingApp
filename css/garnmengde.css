@@ -1,6 +1,11 @@
 @import url("/css/reset.css");
 @import url("/css/variables.css");
 
+.intro-section {
+    margin-bottom: 50px;
+    text-align: left;
+}   
+
 .form-section {
     margin-bottom: 30px;
 }

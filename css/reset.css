@@ -1,11 +1,12 @@
 @import url('./css/variables.css');
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-headings);
+    font-family: "DM Serif Display", serif;
 }
 
 h1 {
     margin-top: 10px;
+    color: var(--text-color);
 }
 
 body {
@@ -42,7 +43,6 @@ header {
     top: 0;
     width: 100%;
     background-color: var(--primary-color);
-    color: white;
     font-size: 2rem;
     padding: 10px;
     padding-right: 30px;
@@ -51,7 +51,7 @@ header {
     box-sizing: border-box;
     display: flex; 
     justify-content: space-between; 
-    box-shadow: 0 3px 8px #754c49;
+    
 }
 
 .logo-container {
@@ -60,32 +60,31 @@ header {
     padding-left: var(--space-small);
     font-family: var(--font-logo);
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .logo-container p {
     margin: 0;
     padding-left: var(--space-small);
-    color: white;
+    color: var(--text-color);
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .logo {
-   width: 40px;
+   width: 35px;
    height: auto;
 }
 
 nav {
     position: absolute;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     text-align: right;
     right: 0;
     top: 60px;
     width: 100%;
     padding: 30px 0 0 0;
-    box-shadow: 0 4px 8px -4px #754c49;
-    border-top: 1px solid #754c49;
+
     display: block !important;
     height: 0 !important;
     opacity: 0 !important;
@@ -97,10 +96,11 @@ nav {
 
 nav a {
     display: block;
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 10px 30px;
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .hamburger-icon {
@@ -136,7 +136,7 @@ nav a {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg) scale(0.8);
     font-size: 28px;
-    color: white;
+    color: black;
     opacity: 0;
     transition: all 0.3s ease;
     font-weight: bold;
@@ -163,7 +163,6 @@ nav a {
     color: white;
 }
 
-
 .tool-button {
     font-family: var(--font-headings);
     background-color: var(--secondary-color);
@@ -171,7 +170,7 @@ nav a {
     border-radius: 8px;
     font-size: 18px;
     border: none;
-    width: 300px; 
+    width: 320px; 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     color: white;
     text-decoration: none;
@@ -300,15 +299,22 @@ footer {
 /*Desktop*/
 @media (min-width: 850px) {
     body {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 35px;
+        height: auto;
     }
 
     h1 {
-        font-size: 64px;
+        font-size: 60px;
+        margin-bottom: 30px;
     }
 
+
     header {
-        padding: 5px 70px;
+        padding: 12px 70px;
     }
 
     main {
@@ -341,6 +347,7 @@ footer {
 
     nav a:hover {
         background-color: var(--color-hover);
+        color: white;
         border-radius: 8pc;
         transition: background-color 0.3s ease;
     }
