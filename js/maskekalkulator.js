@@ -82,7 +82,7 @@ function generateIncreaseInstructions(
   }
 
   html += `</ul>`;
-  html += `<p><strong>Følg stegene under for å få det helt jevnt.</strong></p>`;
+  html += `<p><strong>Følg stegene under for å få det helt jevnt:</strong></p>`;
 
   // Generer detaljerte steg
   html += generateDetailedSteps(
