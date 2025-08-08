@@ -1,1 +1,1 @@
-# garnio
+# Garnio Knitting App
