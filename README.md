@@ -1,8 +1,5 @@
 # Garnio Knitting App
 
-Garnio is a web project that provides useful tools, resources, and contact options for the knitting community.  
-The website is designed to be clean, user-friendly, and mobile responsive, with a modern and cozy aesthetic that matches the knitting theme.
-
 ## Features
 - **Homepage** – Overview of knitting tools and features.
 - **About Page** – Information about Garnio.
@@ -16,3 +13,8 @@ The website is designed to be clean, user-friendly, and mobile responsive, with 
 - **JavaScript** – For interactivity, such as calculators, "back to top" buttons or future form handling.
 - **Font Awesome** – Icons.
 - **Google Fonts** – Custom typography.
+
+
+Description
+Garnio is a web project that provides useful tools, resources, and contact options for the knitting community.  
+The website is designed to be clean, user-friendly, and mobile responsive, with a modern and cozy aesthetic that matches the knitting theme.
