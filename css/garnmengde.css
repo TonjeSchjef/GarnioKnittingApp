@@ -73,7 +73,7 @@
 }
 
 .calculate-btn:hover {
-    background-color: var(--primary-color);
+    background-color: var(--color-hover);
     transform: translateY(-1px);
 }
 
