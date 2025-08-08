@@ -1,6 +1,6 @@
 # Garnio Knitting App
 
-![image](https://www.imghippo.com/i/IRKU7724fnM.png)
+![image](https://i.imghippo.com/files/IRKU7724fnM.png)
 
 ## Description
 Garnio is a web project that provides useful tools, resources, and contact options for the knitting community.  
